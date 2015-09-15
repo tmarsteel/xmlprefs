@@ -22,8 +22,6 @@ To store preferences to a file of your choice, just contstruct a `XMLFilePrefere
 ```java
 Preferences prefs = new XMLFilePreferences(new File("prefs.xml"));
 
-Preferences prefs = Preferences.userRoot();
-
 prefs.put("key", "value");
 prefs.node("subNode").put("key2", "value2");
 prefs.flush();
