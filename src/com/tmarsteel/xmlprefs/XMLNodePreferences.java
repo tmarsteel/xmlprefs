@@ -24,8 +24,6 @@
 package com.tmarsteel.xmlprefs;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.prefs.AbstractPreferences;
 import java.util.prefs.BackingStoreException;
@@ -100,11 +98,11 @@ class XMLNodePreferences extends AbstractPreferences
      * <b>ONLY</b> purpose is to create the XMLFilePreferences.rootPreferences
      * object.
      */
-    protected XMLNodePreferences(Node node)
+    protected XMLNodePreferences(AbstractPreferences parent, Node node)
     {
-        super(null, "");
+        super(parent, "prefs");
         
-        this.parent = null;
+        this.parent = parent;
         this.baseNode = node;
     }
     

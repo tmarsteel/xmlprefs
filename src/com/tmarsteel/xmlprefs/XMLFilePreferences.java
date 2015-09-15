@@ -62,7 +62,7 @@ public class XMLFilePreferences extends AbstractPreferences
             rootDocument.appendChild(rootDocument.createElement("prefs"));
         }
 
-        rootPreferences = new XMLNodePreferences(rootDocument.getFirstChild());
+        rootPreferences = new XMLNodePreferences(this, rootDocument.getFirstChild());
     }
     
     /**
