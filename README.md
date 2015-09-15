@@ -27,6 +27,7 @@ Preferences prefs = Preferences.userRoot();
 prefs.put("key", "value");
 prefs.node("subNode").put("key2", "value2");
 prefs.flush();
+```
 
 ## Imporant notes
 
