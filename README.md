@@ -33,3 +33,8 @@ prefs.flush();
 *  `flush()` always flushes the entire tree, not only the node it was called on
 
 **Therefore:** use `userRoot()` and `systemRoot()` only if you give a shit about other applications preferences that use this implementation, too. Instead, use a XML file in your applications directory, the user.home or %APPDATA%.
+
+## Installation / Usage
+
+Go to the [releases page](//github.com/tmarsteel/xmlprefs/releases) and download the latest tmarsteel-xmlprefs-X.X.X.jar and 
+include it in your project.
