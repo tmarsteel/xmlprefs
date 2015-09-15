@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="xmlprefs" basedir=".">
 
-	<property name="project.version" value="0.1.0" />
+	<property name="project.version" value="0.1.1" />
 
 	<fail message="Please build using Ant 1.8.0 or higher.">
         <condition>
