@@ -124,10 +124,10 @@ public class XMLFilePreferencesFactory implements PreferencesFactory
                 }
             }
             
-            systemRoot = getFilePreferences(path);
+            userRoot = getFilePreferences(path);
         }
         
-        return systemRoot;
+        return userRoot;
     }
     
     private XMLFilePreferences getFilePreferences(String path)

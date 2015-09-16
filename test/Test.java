@@ -31,5 +31,27 @@ public class Test
         {
             System.err.println("Key in Sub-Node not stored correctly");
         }
+        
+        prefs.node("someNode").removeNode();
+        prefs.remove("key");
+        
+        prefs.flush();
+        
+        prefs = new XMLFilePreferences(prefFile);
+        
+        if (prefs.get("key", null) != null)
+        {
+            System.err.println("Deleting toplevel property failed");
+        }
+        
+        if (prefs.nodeExists("someNode"))
+        {
+            System.err.println("Deleting toplevel node failed");
+            
+            if (prefs.node("someNode").get("key2", null) != null)
+            {
+                System.err.println("Deleting sublevel property failed");
+            }
+        }
     }
 }
